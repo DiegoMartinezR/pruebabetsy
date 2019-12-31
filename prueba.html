@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+       $("#btnEnviar").click(function(){
+           val_nom = $("#nom").val();
+           val_pre = $("#precio").val();
+           datos = {
+               "nombre" : val_nom,
+               "precio" : val_pre
+    
+           };
+           $.post('procesar.php',datos,function(res){
+               $("#nom").val("");
+               $("#precio").val("");
+               $("#msg").html(res);
+           });
+        
+    });
+    });
+    </script>
+</head>
+<body>
+    <br/>
+    Nombre: <input id="nom" /><br/>
+    Precio: <input id="precio" /><br/>
+    <button id="btnEnviar">Enviar</button>
+</body>
+</html>>
