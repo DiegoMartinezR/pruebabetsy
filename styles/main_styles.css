@@ -1215,7 +1215,7 @@ input:last-of-type
 .testimonials_item
 {
 	width: 100%;
-	padding-bottom: 75px;
+	padding-bottom: 100px;
 }
 .quote
 {
@@ -1234,8 +1234,8 @@ input:last-of-type
 }
 .testimonial_image
 {
-	width: 110px;
-	height: 110px;
+	width: 200px;
+	height: 200px;
 	border-radius: 70%;
 	overflow: hidden;
 }

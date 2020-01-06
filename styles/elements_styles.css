@@ -1063,7 +1063,8 @@ section
 
 .footer
 {
-	width: 100%;
+	width: 100%; 
+	padding-top: 86px;
 	background: #1a1a1a;
 }
 .footer .section_title h1
